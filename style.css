@@ -9,6 +9,7 @@
 }
 
 header {
+  margin: 0 auto;
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -51,4 +52,21 @@ li a:hover::before {
   font-weight: 300;
   text-wrap: nowrap;
   transition: 0.3s ease-in-out;
+}
+
+.hero{
+  width: 100%;
+  height: 100vh;
+  background-image: url(images/desk_laptop.avif);
+  /*background: linear-gradient(rgba(44, 44, 44, 0.1), rgba(29, 28, 28, 0.1));*/
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.hero-container {
+  margin: 0 auto;
+  width: 90%;
+  height: 100%;
+  max-width: 1200px;
 }
