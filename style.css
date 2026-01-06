@@ -54,6 +54,7 @@ li a:hover::before {
   transition: 0.3s ease-in-out;
 }
 
+/*HERO STARTS HERE*/
 .hero{
   width: 100%;
   height: 100vh;
@@ -82,5 +83,26 @@ li a:hover::before {
 
 .intro h2 {
   color: white;
-  font-size: 2rem;
+  font-size: 3rem;
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 1px solid;
+  animation: typing 3s steps(20) forwards,
+  blink 1s step-end infinite;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+
+  to {
+    width: 100%
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
 }
