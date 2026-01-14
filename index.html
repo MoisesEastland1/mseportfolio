@@ -13,20 +13,21 @@
   <header>
     <a href="logo" class="logo">logo</a>
     <ul class="nav-links">
-      <li>
+      <li class="nav-link">
         <a href="Home">Home</a>
       </li>
-      <li>
+      <li class="nav-link">
         <a href="About">About</a>
       </li>
-      <li>
+      <li class="nav-link">
         <a href="Experience">Experience</a>
       </li>
-      <li>
+      <li class="nav-link">
         <a href="Contact">Contact</a>
       </li>
     </ul>
   </header>
+
   <main>
     <section class="hero">
       <div class="hero-container">
@@ -34,12 +35,17 @@
           <h1>Hello, I am Moises Segura</h1>
           <h2>Full Stack Web-Developer</h2>
         </div>
-        <div class="img"></div>
-      </div>
+        
+      </div><!--This is the end of the hero-container-->
+
     </section>
-    <section class="about-container">
+    <!--This is the end of the hero section-->
+
+    <section class="about">
     <div class="about-container">
-      <div class="img-info">
+
+      <div class="grid-container">
+
       <div class="box"style="grid-area: box1">
         <img src="images/moises_profile.jpg" alt="profile pic">
       </div>
@@ -49,8 +55,9 @@
         <p><strong>Profile:</strong> <span>Full Stack Developer</span></p>
         <p><strong>Phone:</strong> <span>832-745-9020</span></p>
         <p><strong>Email:</strong>    <span>meastland977@gmail.com</span></p>
-        
       </div>
+
+
       <div class="box" id="box3" style="grid-area:box3">
         <h4>About Me</h4>
         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequuntur, odio! Pariatur ducimus, atque dicta ipsum consequatur sed veritatis ex labore eius nesciunt perspiciatis sequi eligendi?</p>
@@ -58,14 +65,55 @@
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore optio, corporis officia fugiat nobis rem.</p>
         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint, aspernatur.</p>
       </div>
+
       <div class="box" id="box4" style="grid-area:box4">
-      
+        <h4 id="skills-title">Skills</h4>
+      <div class="skills">
+        <p class="skills-name">HTML</p>
+        <div class="progress-bar">
+          <div class="html-skill"><span class="skill-span">92%</span></div>
+        </div>
+
+        <p class="skills-name">CSS</p>
+        <div class="progress-bar">
+          <div class="css"><span class="skill-span">92%</span></div>
+        </div>
+
+        <p class="skills-name">Javascript</p>
+        <div class="progress-bar">
+          <div class="javascript"><span class="skill-span">92%</span></div>
+        </div>
+
+        <p class="skills-name">React</p>
+        <div class="progress-bar">
+          <div class="react"><span class="skill-span">92%</span></div>
+        </div>
+        
+      </div><!--This is the end of the skiils-->
       </div>
+      <!--This is the end of the grid container-->
       </div>
       
-      
+      <!--This end of the about container-->
     </div>
-    </section>
+    </section><!--This is the end of the about section-->
+    <section>
+      <div class="resume-container">
+      <div class="grid-container2">
+        <div class="box5" id="box-2"style="grid-area:box5">
+          grid-item 1
+        </div>
+
+        <div class="box6" id="box-2" style="grid-area:box6">
+          grid-item 2
+        </div>
+
+        <div class="box7" id="box-2" style="grid-area:box7">
+          grid-item 3
+        </div>
+      </div>
+      </div><!--This the end of the resume container-->
+    </section><!--This is the end of the resume section-->
   </main>
 
 </body>
